@@ -1,5 +1,6 @@
 Web Designer Test
 =================
+Download the test using the button on the right or clone it using git. Complete at least 3 of the questions below and either email the hiring manager a compressed folder of the project or submit a pull request here.
 
 Question #1
 -----------
