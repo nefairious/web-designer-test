@@ -20,7 +20,7 @@ The header section should contain a nav with three links:
 
 Question #2
 -----------
-In the content section of the site, build out a simple blog post that has a featured image. You're free to design it how you like and we suggest using [Lorem Ipsum](http://www.ipsum-generator.com/) for text and [Placekitten](https://placekitten.com/) for the image.
+In the content section of the site, build out a simple blog post that has a featured image. You're free to design it how you like and we suggest using [Lorem Ipsum](http://www.ipsum-generator.com/) for text and [Placekitten](https://placekitten.com/) for the image. We are judging design just as much as your code.
 
 Question #3
 -----------
