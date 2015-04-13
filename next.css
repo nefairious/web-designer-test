@@ -1,0 +1,317 @@
+/* Styling the Sequence container */
+#sequence {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1600px;
+    font-size: 0.625em;
+    margin: 0 auto;
+    position: relative;
+    height: 630px;
+}
+
+#sequence > .sequence-canvas {
+    height: 100%;
+    width: 100%;
+}
+
+#sequence > .sequence-canvas > li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: -50%;
+}
+
+#sequence > .sequence-canvas > li img {
+    height: 96%;
+}
+
+#sequence > .sequence-canvas li > * {
+    position: absolute;
+    transition-property: left, opacity;
+}
+
+/* Styling previous and next buttons */
+.sequence-next,
+.sequence-prev {
+    color: black;
+    cursor: pointer;
+    display: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    height: 75px;
+    margin-top: -47.5px;
+}
+
+.sequence-prev {
+    left: 3%;
+}
+
+.sequence-next {
+    right: 3%;
+}
+
+.sequence-prev img,
+.sequence-next img {
+    height: 100%;
+    width: auto;
+}
+
+
+.sequence-pagination {
+    bottom: -1%;
+    display: none;
+    right: 6%;
+    position: absolute;
+    z-index: 10;
+    transition-duration: 0.5s;
+}
+
+.sequence-pagination li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    height: 140px;
+}
+
+.sequence-pagination li img {
+    cursor: pointer;
+    opacity: 0.5;
+    transition-duration: 1s;
+    transition-property: margin-bottom, opacity;
+}
+
+.sequence-pagination li img:hover {
+    margin-bottom: 4px;
+    transition-duration: 0.3s;
+}
+  
+.sequence-pagination li.current img {
+    opacity: 1;
+}
+
+.sequence-next,
+.sequence-prev {
+    position: absolute;
+    opacity: 0.6;
+    transition-duration: 1s;
+}
+
+.sequence-next:hover,
+.sequence-prev:hover {
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+
+.girl {
+    left: 30%;
+    bottom: -48%;
+    opacity: 0;
+    position: relative;
+    height: auto !important;
+    max-height: 568px !important;
+    width: 30%;
+    min-width: 225px;
+    max-width: 266px;
+  
+}
+
+.animate-in .girl {
+    left: 15%;
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.animate-out .girl {
+    left: 15%;
+    opacity: 0;
+    transition-duration: 0.5s; 
+}
+
+/* Making the Slider Responsive */
+
+@media only screen and (min-width: 992px) {
+    #sequence .title {
+      width: 42%; 
+  } 
+}
+
+@media only screen and (max-width: 838px) {
+    #sequence {
+      height: 550px; 
+  }
+    #sequence .girl {
+      max-height: 530px !important;
+      width: auto; 
+  } 
+}
+
+@media only screen and (max-width: 768px) {
+    #sequence {
+      height: 500px; 
+  }
+  
+    #sequence .title {
+      font-size: 2.8em;
+    }
+  
+    #sequence .subtitle {
+      font-size: 1.6em; 
+    }
+  
+    #sequence .sequence-next,
+    #sequence .sequence-prev {
+      height: 40px;
+      margin-top: -40px; 
+    }
+  
+    #sequence .girl {
+      max-height: 480px !important;
+      width: auto; 
+      left: 8%;
+  }
+  
+    #sequence .sequence-pagination {
+      right: 5%;
+      top: 70%;
+  }
+  
+    #sequence .sequence-pagination li img {
+      height: 90px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+    #sequence .girl {
+      left: 50%;
+      min-width: 40%;
+      width: 40%;
+  }
+  
+    #sequence .animate-in .girl {
+      left: 50%;
+      margin-left: -33%;
+  }
+  
+    #sequence .animate-out .girl {
+      left: 50%;
+      margin-left: -33%;
+  }
+  
+    #sequence .title {
+      color: #000000;
+      background: #ffffff;
+      background: rgba(0, 0, 0, 0.09);
+      bottom: 0;
+      left: 100%;
+      padding: 4%;
+      bottom: -50%;
+      width: 100%;
+      z-index: 10; 
+  }
+  
+    #sequence .animate-in .title {
+      left: -10%;
+  }
+  
+    #sequence .animate-out .title {
+      left: -100%;
+  }
+  
+    #sequence .subtitle {
+      visibility: hidden;
+  }
+  
+    #sequence .sequence-pagination {
+      right: -1%;
+      top: 78%;
+  }
+  
+    #sequence .sequence-pagination li img {
+      height: 90px;
+  }
+}
+
+@media only screen and (max-width: 518px) {
+    #sequence {
+      height: 450px; 
+  }
+}
+
+@media only screen and (max-width: 468px) {
+    #sequence {
+      height: 415px; 
+  }
+  
+    #sequence .sequence-pagination {
+      opacity: 0;
+      visibility: hidden; 
+  } 
+}
+
+@media only screen and (max-width: 418px) {
+    #sequence {
+      height: 375px; 
+  }
+}
+
+@media only screen and (max-width: 368px) {
+    #sequence {
+      height: 325px;
+  }
+  
+    #sequence .title {
+      font-size: 2.2em; 
+  } 
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
+  
+    #sequence {
+    height: 320px; 
+  }
+  
+    #sequence .girl {
+      min-width: 45%;
+      width: 45%; 
+  }
+  
+    #sequence .animate-in .girl {
+      margin-left: -22.5%; 
+  }
+  
+    #sequence .animate-out .girl {
+      margin-left: -22.5%; 
+  } 
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape) {
+    #sequence {
+      height: 260px; 
+  }
+  
+    #sequence .girl {
+      min-width: 24%;
+      width: 24%; 
+  }
+  
+    #sequence .animate-in .girl {
+      left: 17.5%;
+      margin-left: 0; 
+  }
+  
+    #sequence .animate-out .girl {
+      left: 17.5%;
+      margin-left: 0; 
+  }
+  
+    #sequence .sequence-pagination {
+      right: 17.5%; 
+  } 
+}

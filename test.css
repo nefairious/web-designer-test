@@ -1,1 +1,231 @@
-/* CSS goes here */
+
+/*=========== Layout ===========================*/
+
+img{
+  width:100%;
+  height:auto;
+}
+header{
+  overflow: hidden;
+  margin: 0 auto;
+  height:auto;
+  background: #2980b9;
+}
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1em;
+}
+.logo{
+  display: block;
+  font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;;
+  max-width: 1280px;
+  padding:2.5em 1em;
+  margin:0 auto;
+  
+
+}
+.logo h1 {color:#fbfafa;}
+h1{ font-size: 2.5em;}
+
+.pull{
+  display:none;
+}
+.pull i:hover {color:#fff;}
+i.fa-bars {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 65px;
+  color:#000;
+}
+
+#mainNav{
+  margin:0 auto;
+  background: #000;
+  display: block;
+  max-width: 1280px;
+}
+#mainNav > ul {
+  display:block;
+  text-align: center;
+  background:none;
+  padding:0;
+}
+#mainNav > ul > li {
+  display: inline-block;
+  padding:11px 20px;
+  color:#cecece;
+}
+#mainNav > ul > li a{
+    padding: 1em;
+    color:#cecece;
+}
+
+.mainNav > ul > li > a:visited {color:#666;}
+#mainNav > ul > li:hover a {color:white;}
+#mainNav  > ul > li:hover {background: #2980b9;}
+#main {
+  max-width:1280px;
+  width:100%;
+  padding: 0 1em;
+  margin:0 auto;
+}
+.content { 
+  width:70%;
+  float:left;
+  padding: 2em;
+
+
+}
+.content h1{font-size: 2em;}
+.content p {
+  line-height: 1.5em;
+}
+.author {padding:.5em 0;overflow: hidden;}
+.author-img {
+  width:71px!important;
+  height:54px;
+  float: left;
+}
+hr {margin: 1em 0;}
+.author h5{
+  float:left;
+  margin-top: 20px;
+}
+.sidebar{
+  width:20%;
+  background: #ededed;
+  float:left;
+padding:2em;
+}
+.sidebar img{
+  width:60%;
+ float:left;
+}
+.sidebar p{
+  line-height: 1.5em;
+  font-size: .9em;
+}
+.sidebar h3{
+  margin-bottom: 1em;
+}
+.author-info {
+ float:left;
+ padding-top: 1em;
+ padding-left: .5em;
+ width:36%;
+}
+/* slider styles */
+.sequence-theme {
+  max-width: 1280px;
+  margin:0 auto;
+}
+
+#sequence {
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1280px;
+ padding-bottom: 30%;
+}
+#sequence > .sequence-canvas > li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.sequence-next, .sequence-prev {
+  color: #cecece;
+  cursor: pointer;
+  padding: 1em 0;
+  position: absolute;
+  top: 32%;
+  z-index: 1000;
+  height: 75px;
+  margin-top: -47.5px;
+}
+.sequence-next:hover, .sequence-prev:hover {
+  color:#2980b9;
+} 
+.sequence-prev {
+  left: 3%;
+}
+.sequence-next {
+  right:3%;
+} 
+
+footer{
+  clear:both;
+  background:#000;
+  color:#ccc;
+  padding:1em;
+}
+/* Slider Responsive Styles*/
+
+/* ========== Responsive Styles ================*/
+/* 480px = 30em
+   768px = 48em
+   1024px = 64em
+ */  
+
+@media screen and (max-width: 64em) {
+
+/*#sequence > .sequence-canvas > li{
+  top:25px;
+}*/
+
+
+}
+@media screen and (max-width: 48em) {
+  .pull{
+    display: block;
+  }
+  header{
+    padding: .5em;
+  }
+  .content, .sidebar{
+    display:block;
+    width:90%;
+    margin:0 auto;
+  }
+
+#mainNav ul {
+  display: none;
+      height: auto;
+      background: #000;
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      margin:0 auto;
+      z-index: 10000;
+      padding: 1em 0;
+}
+#mainNav ul li {
+  display: block;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  padding: 1em;
+  width:90%;
+}
+#mainNav ul li:last-child {border:none;}
+#mainNav ul li:hover {
+  width:90%;
+  }
+#sequence {
+  padding-bottom: 50%;
+}
+}
+@media screen and (max-width: 30em) {
+/*  #sequence {
+    height: 415px;
+  }*/
+  
+
+}
+
