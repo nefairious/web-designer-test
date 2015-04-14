@@ -47,33 +47,31 @@ i.fa-bars {
   display: block;
   max-width: 1280px;
 }
-#mainNav > ul {
+.main-nav{
   display:block;
   text-align: center;
   background:none;
   padding:0;
 }
-#mainNav > ul > li {
+.main-nav > li {
   display: inline-block;
   padding:11px 20px;
   color:#cecece;
 }
-#mainNav > ul > li a{
+.main-nav > li a{
     padding: 1em;
     color:#cecece;
 }
 
-.mainNav > ul > li > a:visited {color:#666;}
-#mainNav > ul > li:hover a {color:white;}
-#mainNav  > ul > li:hover {background: #2980b9;}
+.main-nav > li > a:visited {color:#666;}
+.main-nav > li:hover a {color:white;}
+.main-nav > li:hover {background: #2980b9;}
 #main {
   max-width:1280px;
-  width:100%;
-  padding: 0 1em;
   margin:0 auto;
 }
 .content { 
-  width:70%;
+  width:65%;
   float:left;
   padding: 2em;
 
@@ -97,11 +95,11 @@ hr {margin: 1em 0;}
 .sidebar{
   width:20%;
   background: #ededed;
-  float:left;
+  float:right;
 padding:2em;
 }
 .sidebar img{
-  width:60%;
+  width:50%;
  float:left;
 }
 .sidebar p{
@@ -163,22 +161,25 @@ footer{
   clear:both;
   background:#000;
   color:#ccc;
-  padding:1em;
+
 }
 /* Slider Responsive Styles*/
 
 /* ========== Responsive Styles ================*/
 /* 480px = 30em
    768px = 48em
+   900px = 56em
    1024px = 64em
  */  
 
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 56em) {
 
-/*#sequence > .sequence-canvas > li{
-  top:25px;
-}*/
+.content { width:55%;}
+.sidebar {width:20%;}
 
+.content h1 {
+  line-height: 1.25em;
+}
 
 }
 @media screen and (max-width: 48em) {
@@ -191,10 +192,19 @@ footer{
   .content, .sidebar{
     display:block;
     width:90%;
-    margin:0 auto;
+    margin:.5em auto;
+    padding:1em;
+    float:none;
+    overflow: hidden;
   }
-
-#mainNav ul {
+  .sidebar img {
+  max-width: 25%
+}
+#main {
+  padding:1em;
+}
+.main-nav > li:hover{background: none;}
+.main-nav{
   display: none;
       height: auto;
       background: #000;
@@ -206,26 +216,21 @@ footer{
       z-index: 10000;
       padding: 1em 0;
 }
-#mainNav ul li {
+.main-nav li {
   display: block;
   text-align: left;
   border-bottom: 1px solid #333;
   padding: 1em;
   width:90%;
 }
-#mainNav ul li:last-child {border:none;}
-#mainNav ul li:hover {
+.main-nav li:last-child {border:none;}
+.main-nav li:hover {
   width:90%;
   }
 #sequence {
   padding-bottom: 50%;
 }
 }
-@media screen and (max-width: 30em) {
-/*  #sequence {
-    height: 415px;
-  }*/
-  
+@media screen and (max-width: 30em){
 
 }
-
