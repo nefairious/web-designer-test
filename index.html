@@ -3,83 +3,107 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Chattr &dot; A blog about cats, for cats</title>
+    <title>Chattr &dot; A blog about cats, for cats</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="test.js"></script>
-<script type="text/javascript" src="jquery.sequence-min.js"></script>
-<link rel="stylesheet" href="normalize.css">
-<link rel="stylesheet" href="test.css">
+<script type="text/javascript" src="js/modernizr.js"></script>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/test.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
 </head>
 <body>
-<header>
 
-		<div class="logo">
-		<h1>Cattr.</h1>
-		<h4>a blog about cats, for cats</h4>
-		</div>
-		<a href="#" class="pull"><i class="fa fa-bars fa-2x"></i></a>
+<div id="outer-wrap">
+<div id="inner-wrap">
+<div class="row">
+    <header id="top" role="banner">
+        <div class="logo">
+            <h1>Cattr.</h1>
+    
+            <a class="nav-btn" id="nav-open-btn" href="#nav"></a>
+        </div>
+    </header>
 
-		
-		<nav id="mainNav">
-			<ul class="main-nav">
-				<li class="nav-list"><a href="index.html">Home</a></li>
-				<li class="nav-list"><a href="#">About</a></li>
-				<li class="nav-list"><a href="#">Blog</a></li>
-				<li class="nav-list"><a href="#" id="sideBar">Sidebar</a></li>
-			</ul>
-
-		</nav>
-
-</header>
-
-
-	<div class="sequence-theme">
-		<div id="sequence">
-			<ul class="sequence-canvas">
-				<li><img src="http://placekitten.com/g/800/600" alt=""></li>
-				<li><img src="http://placekitten.com/g/500/250" alt=""></li>
-				<li><img src="http://placekitten.com/g/500/200" alt=""></li>
-				<li><img src="http://placekitten.com/g/500/300" alt=""></li>
-			</ul>
-			
-		<!-- add navigation control -->
-		<i class="sequence-prev fa fa-chevron-left fa-5x"></i>
-		<i class="sequence-next fa fa-chevron-right fa-5x"></i>
-	</div>	
+    <nav id="nav" role="navigation">
+        <div class="block">
+            <ul>
+                <li class="is-active">
+                    <a href="#">Home</a>
+                </li><!--
+             --><li>
+                    <a href="#">About</a>
+                </li><!--
+             --><li>
+                    <a href="#">Blog</a>
+                </li><!--
+             --><li>
+                    <a href="#">Sidebar</a>
+                </li>
+            </ul>
+            <a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
+        </div>
+    </nav>
 </div>
+    <div id="main" role="main">
+    <div class="sequence-theme">
+        <div id="sequence">
+            <ul class="sequence-canvas">
+                <li><img src="http://placekitten.com/g/600/300" alt=""></li>
+                <li><img src="http://placekitten.com/g/500/250" alt=""></li>
+                <li><img src="http://placekitten.com/g/550/250" alt=""></li>
+                <li><img src="http://placekitten.com/g/500/300" alt=""></li>
+            </ul>
+            
+        <!-- add navigation control -->
+        <i class="sequence-prev fa fa-chevron-left fa-5x"></i>
+        <i class="sequence-next fa fa-chevron-right fa-5x"></i>
 
-<div id="main">
+    </div>  
 
-	<section class="content">
-		<h1>How to Train your Human to Do What You Want</h1>
-		<div class="author">
-			<img class="author-img" src="images/tb-author.png" alt="author img">
-			<h5>By Bartholomeow | Apr 12, 2013 </h5>
-		</div>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, mollitia voluptatibus provident veniam iste, maiores reprehenderit quas ipsam ipsum eius architecto deleniti officiis eligendi. Voluptatibus harum expedita, perspiciatis temporibus sed.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, mollitia voluptatibus provident veniam iste, maiores reprehenderit quas ipsam ipsum eius architecto deleniti officiis eligendi. Voluptatibus harum expedita, perspiciatis temporibus sed.</p>
-
-	</section>
-	<aside class="sidebar">
-		<h3>About the author</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius delectus, animi numquam, fuga veritatis totam praesentium nostrum non cumque provident inventore! Sapiente, quod optio modi iste, quibusdam quisquam commodi. Quod.</p>
-		<hr>
-		<img src="images/hipster-cat.jpeg" alt="">
-		<div class="author-info">
-			<h5>Bartholomeow</h5>
-			<h6>Member since: 2010</h6>
-		</div>
-	</aside>
-	
 </div>
-<footer>
-	<div class="row">
-	this is the footer
-	</div>
-</footer>
+        <article class="block">
+        <section class="content">
+        <h1>How to Train your Human to Do What You Want</h1>
+        <div class="author">
+            <img class="author-img" src="images/tb-author.png" alt="author img">
+            <h5>By Bartholomeow | Apr 12, 2013 </h5>
+        </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, mollitia voluptatibus provident veniam iste, maiores reprehenderit quas ipsam ipsum eius architecto deleniti officiis eligendi. Voluptatibus harum expedita, perspiciatis temporibus sed.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, mollitia voluptatibus provident veniam iste, maiores reprehenderit quas ipsam ipsum eius architecto deleniti officiis eligendi. Voluptatibus harum expedita, perspiciatis temporibus sed.</p>
+
+    </section>
+    <aside class="sidebar">
+        <h3>About the author</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius delectus, animi numquam, fuga veritatis totam praesentium nostrum non cumque provident inventore! Sapiente, quod optio modi iste, quibusdam quisquam commodi. Quod.</p>
+        <hr>
+        <img src="images/hipster-cat.jpeg" alt="">
+        <div class="author-info">
+            <h5>Bartholomeow</h5>
+            <h6>Member since: 2010</h6>
+        </div>
+    </aside>
+    
+</div>
+</article>
+    </div>
+
+    <footer role="contentinfo">
+        <div class="row">
+    <p>Copyright &copy; 2015 Nefairious Design. All rights reserved.</p>
+    <ul>
+        <li><a href="#">Home</li>
+        <li><a href="#">About</li>
+        <li><a href="#">Blog</li>
+
+    </ul>
+    </div>
+    </footer>
+
+</div>
+<!--/#inner-wrap-->
+</div>
+<!--/#outer-wrap-->
 <script>
 
     // Initiating Sequence
@@ -99,5 +123,9 @@ $(document).ready(function(){
 }); 
 
 </script>
+<script type="text/javascript" src="js/test.js"></script>
+<script type="text/javascript" src="js/jquery.sequence-min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
